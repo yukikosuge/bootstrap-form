@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アプリ開発(CSS)</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        /* #1 */
+        /* .container{
+            background-color: #f99;
+        } */
+
+        /* #2 */
+        /* .box1 {
+            background-color: blue;
+        }
+
+        .box2 {
+            background-color: tomato;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 
+    #1
+    <div class="container">
+        <h1 class="mt-3">#1bootstrapの練習</h1>
+        <p>bootstrapの練習をしています</p>
+    </div>
+ -->
+
+    <!-- #2グリッドシステム lg:ラージ960px以上 md:720px以上 col:画面を12分割したうちの数値指定 -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="box1 col-lg-2 col-md-4">/*960px以上の時は2つ分の大きさ、720-959pxの時は4つ分の大きさ719px以下は12分の大きさを指定*/
+                box1
+            </div>
+            <div class="box2 col-md-8">/*720px以上の時は8つ分の大きさ、719px以下の時は12分の大きさを指定*/
+                box2
+            </div>
+            <div class="box1 col-lg-2">/*960px以上の時は2つ分の大きさ959px以下の時は12分の大きさを指定*/
+                box1
+            </div>
+    </div> -->
+
+    <!-- #2 グリッドシステムoffset offset:数値指定分開ける指示-->
+    <!-- <div class="container">
+        <div class="row">
+            <!-- 2つ分開けて8つ分使う指示/左右に2つ分空いて中央に8つ分の大きさのbox1が存在する -->
+    <!-- <div class="box1 col-8 offset-2">
+                box1
+            </div>
+            <div class="box2 col-12">
+                box2
+            </div>
+        </div>    
+    </div> -->
+
+
+    <!-- #3 テーブル 便利クラス-->
+    <!-- <div class="container">
+        <h1>見出し</h1>
+        <h2>見出し2</h2>
+        <h3>見出し3</h3>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <!-- table～で様々な装飾が出来る -->
+    <!-- <table class="table table-striped">
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+        </table> -->
+
+    <!-- <code>で挟むとピンク色に強調される -->
+    <!-- <p>HTML段落は<code>p</code>です</p> -->
+
+    <!-- 見た目の変化 -->
+    <!-- <pre><code>
+            123abc
+        </code></pre> -->
+
+    <!-- キーボードチックな見た目の精製 -->
+    <!-- <p><kbd>c</kbd>キーを押してください</p> -->
+
+    <!-- 画像を画面サイズに合わせる/classに"img-fluid"指定 -->
+    <!-- <img src="https://picsum.photos/600/600" alt="" class="img-fluid"> -->
+
+    <!-- 画像に枠を付ける/classに""img-thumbnail" -->
+    <!-- <img src="https://picsum.photos/600/600" alt="" class="img-thumbnail"> -->
+
+    <!-- 画像の四隅に丸みを帯びさせる/classに"img-fluid rounded"指定 -->
+    <!-- <img src="https://picsum.photos/600/600" alt="" class="img-fluid rounded">
+    </div> -->
+
+    <!-- #4 nav-->
+    <div class="container mt-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Conpany</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active">Form</a>
+            </li>
+        </ul>
+        <!-- jumbotron -->
+        <!-- <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </div> -->
+
+              <!-- button -->
+<!-- <button class="btn btn-primary">primary</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button> -->
+
+    <!-- budge/「new」「必須」等コメント -->
+<!-- <span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span> -->
+
+
+    <!-- cards -->
+    <!-- <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>  -->
+
+
+      <!-- #5/modal/js/閉じないと消えない小窓 -->
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        ログアウト
+      </button>
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ログアウト</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ログアウトしてもよろしいですか？
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+              <button type="button" class="btn btn-primary">ログアウト</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- popover/ツールチップ /下記js記述有-->
+      <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+
+      <!-- scrollspy/ページ内リンクとスクロールの同期 -->
+      <!-- <nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#fat">@fat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mdo">@mdo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#one">one</a>
+              <a class="dropdown-item" href="#two">two</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#three">three</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <h4 id="fat">@fat</h4>
+        <p>...</p>
+        <h4 id="mdo">@mdo</h4>
+        <p>...</p>
+        <h4 id="one">one</h4>
+        <p>...</p>
+        <h4 id="two">two</h4>
+        <p>...</p>
+        <h4 id="three">three</h4>
+        <p>...</p>
+      </div> -->
+
+      <!-- toasts/stacking/通知のお知らせ -->
+      <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded mr-2" alt="...">
+          <strong class="mr-auto">Bootstrap</strong>
+          <small class="text-muted">just now</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          See? Just like this.
+        </div>
+      </div> -->
+
+      <!-- tooltips/マウスオーバーで小窓が出る -->
+      <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+        Tooltip on left
+      </button> -->
+
+      <!-- #8 -->
+      <!-- 横ver -->
+<!--   
+    <div class="container mt-5">
+        <form action=""method="post">
+
+    <div class="form-group">
+        <label for="myname">お名前</label>>
+        <input class="form-control" type="text" name="myname" id="myname" >
+      </div>
+
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" name="job" value="会社員" id="job_1">
+        <label class="form-check-label" for="job_1">会社員</label>
+</div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" name="job" value="自営業" id="job_1">
+            <label class="form-check-label" for="job_1">自営業</label>
+        </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="checkbox" name="job" value="学生" id="job_1">
+                <label class="form-check-label" for="job_1">学生</label>
+            </div> -->
+
+
+    <!-- 縦ver -->
+    <!-- <div class="container mt-5">
+        <form action=""method="post">
+
+    <div class="form-group">
+        <label for="myname">お名前</label>>
+        <input class="form-control" type="text" name="myname" id="myname" >
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="job" value="会社員" id="job_1">
+        <label class="form-check-label" for="job_1">会社員</label>
+</div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="job" value="自営業" id="job_1">
+            <label class="form-check-label" for="job_1">自営業</label>
+        </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="job" value="学生" id="job_1">
+                <label class="form-check-label" for="job_1">学生</label>
+            </div>
+      </form>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- アプリ開発（css）お問い合わせフォーム -->
+        <div class="jumbotron">
+            <h1 class="display-8">お問い合わせページ</h1>
+            <p class="lead">お問い合わせページになります。下記項目にご入力頂き、送信ボタンをクリックして下さい。</p>
+        </div>
+          
+    <div class="container mt-5">
+        <form class="needs-validation" action=""method="post" novalidate>
+
+    <div class="form-group">
+        <label for="myname">お名前</label>>
+        <input class="form-control" type="text" name="myname" id="myname" >
+        <p class="invalid-feedback">お名前を入力してください</p>
+      </div>
+
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" name="job" value="会社員" id="job_1">
+        <label class="form-check-label" for="job_1">会社員</label>
+</div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" name="job" value="自営業" id="job_1">
+            <label class="form-check-label" for="job_1">自営業</label>
+        </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="checkbox" name="job" value="学生" id="job_1">
+                <label class="form-check-label" for="job_1">学生</label>
+            </div>
+
+        
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">メールアドレス</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputage">年齢</label>
+                <input type="age" class="form-control" id="inputage">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">住所</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="埼玉県さいたま市">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">住所2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="南区〇〇 0-00-00 △ビル ×号室">
+            </div>
+            <div class="form-row">
+     
+           
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  内容ご確認の上チェックお願いします
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">送信</button>
+          </form>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+        <!-- popover -->
+        <!-- <script>
+            $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+        </script> -->
+</body>
+
+</html>
